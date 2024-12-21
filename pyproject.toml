@@ -1,0 +1,14 @@
+[project]
+name='clean-tree'
+description='Commitment is hard :)'
+version='0.0.0'
+authors=[
+    { name = 'Carter Fendley' }
+]
+
+[project.optional-dependencies]
+dev = [
+    "tox",
+    "pytest",
+    "pytest-cov"
+]

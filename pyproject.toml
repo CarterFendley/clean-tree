@@ -6,9 +6,18 @@ authors=[
     { name = 'Carter Fendley' }
 ]
 
+dependencies = [
+    "click",
+    "colorama",
+    "pydantic"
+]
+
 [project.optional-dependencies]
 dev = [
     "tox",
     "pytest",
     "pytest-cov"
 ]
+
+[project.scripts]
+clean-tree = "clean_tree.cli.main:clean_tree"
